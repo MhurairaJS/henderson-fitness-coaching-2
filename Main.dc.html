@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Concept 1 — Premium Personal Coach</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0E0E0D}
+a{color:#EEEAE2}a:hover{color:#ffffff}
+.bw{filter:grayscale(1) contrast(1.06)}
+@media (max-width:900px){.stack{grid-template-columns:minmax(0,1fr) !important}.hidem{display:none !important}}
+</style>
+</helmet>
+<div id="top" style="background: #0E0E0D; color: #EEEAE2; font-family: 'Archivo', sans-serif; font-size: 17px; line-height: 1.6">
+
+<header style="max-width: 1280px; margin: 0 auto; padding: 28px 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap">
+<a href="#top" style="text-decoration: none; display: flex; align-items: baseline; gap: 10px; color: #EEEAE2">
+<span style="font-weight: 800; font-stretch: 72%; font-size: 26px; letter-spacing: 0.06em">HENDERSON</span>
+<span style="font-family: 'Instrument Serif', serif; font-style: italic; font-size: 21px; color: {{accent}}">fitness coaching</span>
+</a>
+<nav class="hidem" style="display: flex; gap: 36px; font-size: 15px; letter-spacing: 0.02em">
+<a href="#coaching" style="text-decoration: none; color: #C9C4BA">Coaching</a>
+<a href="#results" style="text-decoration: none; color: #C9C4BA">Results</a>
+<a href="#about" style="text-decoration: none; color: #C9C4BA">About Brent</a>
+<a href="#pricing" style="text-decoration: none; color: #C9C4BA">Pricing</a>
+</nav>
+<a href="https://calendly.com/hendersonfitnesscoaching/consult" style="text-decoration: none; border: 1px solid {{accent}}; color: #EEEAE2; padding: 12px 22px; font-size: 15px; font-weight: 600; letter-spacing: 0.02em">Book free consult</a>
+</header>
+
+<section class="stack" style="max-width: 1280px; margin: 0 auto; padding: 48px 40px 96px; display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 64px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 32px">
+<div style="font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: #A39E94; display: flex; gap: 14px; align-items: center">
+<span style="width: 36px; height: 1px; background: {{accent}}"></span>Online coaching nationwide · 1-on-1 in Seattle
+</div>
+<h1 style="margin: 0; font-weight: 800; font-stretch: 70%; text-transform: uppercase; font-size: clamp(56px, 7.4vw, 116px); line-height: 0.9; letter-spacing: -0.01em">Fitness coaching built for <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; text-transform: none; font-stretch: 100%; color: {{accent}}; letter-spacing: 0">real life.</span></h1>
+<p style="margin: 0; font-size: 22px; line-height: 1.5; color: #D6D1C7; max-width: 560px">Lose fat. Build strength. Stay consistent — without living in the gym.</p>
+<div style="display: flex; gap: 16px; flex-wrap: wrap; align-items: center">
+<a href="https://calendly.com/hendersonfitnesscoaching/consult" style="text-decoration: none; background: {{accent}}; color: #0E0E0D; padding: 20px 34px; font-weight: 700; font-size: 17px; letter-spacing: 0.01em">Book Your Free Consultation</a>
+<a href="#how" style="text-decoration: none; color: #EEEAE2; padding: 20px 8px; font-size: 16px; border-bottom: 1px solid #4A4842">See how coaching works</a>
+</div>
+<p style="margin: 0; font-size: 14px; color: #A39E94; max-width: 520px">A free 1-on-1 call with Brent: what's holding you back, realistic goals for your lifestyle, and a simple plan forward.</p>
+<div style="display: flex; align-items: center; gap: 20px; padding-top: 24px; border-top: 1px solid #2A2926; flex-wrap: wrap">
+<div style="color: {{accent}}; font-size: 20px; letter-spacing: 3px">★★★★★</div>
+<div style="font-size: 15px; color: #D6D1C7"><strong style="color: #EEEAE2">75+ five-star Google reviews</strong> from online and Seattle clients</div>
+</div>
+</div>
+<div style="position: relative">
+<img class="bw" src="./assets/5a7dc1402f632bf14d63b090db53cbaf.jpg" alt="Brent Henderson training in the gym" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 40% 30%; border: 1px solid #2A2926">
+<figure style="margin: 0; position: absolute; left: -48px; bottom: 40px; width: 300px; background: #EEEAE2; color: #141413; padding: 24px 26px; box-shadow: 0 30px 60px rgba(0,0,0,0.45)">
+<div style="color: #8A6A35; letter-spacing: 2px; font-size: 14px">★★★★★</div>
+<blockquote style="margin: 10px 0 14px; font-family: 'Instrument Serif', serif; font-size: 21px; line-height: 1.3">“Within the first few weeks I already feel stronger. I'm understanding now that less is more.”</blockquote>
+<figcaption style="font-size: 13px; font-weight: 600; letter-spacing: 0.04em">Elizabeth Halper · Google review</figcaption>
+</figure>
+</div>
+</section>
+
+<section style="border-top: 1px solid #2A2926; border-bottom: 1px solid #2A2926; background: #121211">
+<div class="stack" style="max-width: 1280px; margin: 0 auto; padding: 48px 40px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr); gap: 40px; align-items: start">
+<div style="font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: #A39E94; line-height: 1.8">What clients<br>say first</div>
+<figure style="margin: 0"><blockquote style="margin: 0 0 12px; font-family: 'Instrument Serif', serif; font-size: 24px; line-height: 1.3">“Brent is a different kind of trainer.”</blockquote><figcaption style="font-size: 14px; color: #A39E94">Ryan Murray</figcaption></figure>
+<figure style="margin: 0"><blockquote style="margin: 0 0 12px; font-family: 'Instrument Serif', serif; font-size: 24px; line-height: 1.3">“Brent is just what I needed… He really knows his stuff.”</blockquote><figcaption style="font-size: 14px; color: #A39E94">Google review</figcaption></figure>
+<figure style="margin: 0"><blockquote style="margin: 0 0 12px; font-family: 'Instrument Serif', serif; font-size: 24px; line-height: 1.3">“I've always struggled to build a routine around strength training…”</blockquote><figcaption style="font-size: 14px; color: #A39E94">Dave G</figcaption></figure>
+</div>
+</section>
+
+<section id="about" class="stack" style="max-width: 1280px; margin: 0 auto; padding: 140px 40px; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 96px; align-items: center">
+<img class="bw" src="./assets/2252d31f221a90415ea881c392935631.jpg" alt="Brent Henderson outdoors" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; border: 1px solid #2A2926">
+<div style="display: flex; flex-direction: column; gap: 28px">
+<div style="font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: {{accent}}">Meet your coach</div>
+<h2 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(40px, 4.4vw, 64px); line-height: 1.05">I'm Brent. I coach people who are done with quick fixes.</h2>
+<p style="margin: 0; color: #D6D1C7; font-size: 19px">After more than a decade in the gym, I saw an industry chasing quick transformations instead of long-term health and realistic habits. I started Henderson Fitness Coaching to give people real structure, clear guidance and the tools to stay consistent — with proven strategies, personal support and a no-BS approach.</p>
+<dl style="margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; border-top: 1px solid #2A2926">
+<div style="padding: 20px 0; border-bottom: 1px solid #2A2926"><dt style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #A39E94">Specialty</dt><dd style="margin: 6px 0 0; font-size: 18px">Strength training</dd></div>
+<div style="padding: 20px 0; border-bottom: 1px solid #2A2926"><dt style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #A39E94">Background</dt><dd style="margin: 6px 0 0; font-size: 18px">Running &amp; cycling</dd></div>
+<div style="padding: 20px 0; border-bottom: 1px solid #2A2926"><dt style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #A39E94">Approach</dt><dd style="margin: 6px 0 0; font-size: 18px">Evidence-based, sustainable</dd></div>
+<div style="padding: 20px 0; border-bottom: 1px solid #2A2926"><dt style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #A39E94">Where</dt><dd style="margin: 6px 0 0; font-size: 18px">Online · Seattle in person</dd></div>
+</dl>
+<a href="https://calendly.com/hendersonfitnesscoaching/consult" style="text-decoration: none; color: {{accent}}; font-weight: 600; font-size: 17px">Talk to Brent — book a free call →</a>
+</div>
+</section>
+
+<section id="coaching" style="background: #EEEAE2; color: #141413">
+<div style="max-width: 1280px; margin: 0 auto; padding: 130px 40px">
+<div class="stack" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 64px; align-items: end; margin-bottom: 72px">
+<h2 style="margin: 0; font-weight: 800; font-stretch: 70%; text-transform: uppercase; font-size: clamp(44px, 5vw, 76px); line-height: 0.95">Training and nutrition, <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; text-transform: none; font-stretch: 100%; color: #8A6A35">built together.</span></h2>
+<p style="margin: 0; font-size: 19px; color: #3D3B36">Your plan is designed around your goals, schedule, experience level and the equipment you actually have — then adjusted every week as your life changes.</p>
+</div>
+<div class="stack" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2px; background: #CFC9BD">
+<div style="background: #EEEAE2; padding: 48px 48px 48px 0; display: flex; flex-direction: column; gap: 20px">
+<img class="bw" src="./assets/4c3238b32134947648ec05249ee2e7c1.jpg" alt="Brent Henderson on a training machine" style="display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: 50% 30%">
+<div style="font-family: 'Instrument Serif', serif; font-size: 22px; color: #8A6A35">01 — Training</div>
+<h3 style="margin: 0; font-size: 30px; font-weight: 700; line-height: 1.2">A program written for your body — at home or in the gym.</h3>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 17px; color: #3D3B36">
+<li style="padding-left: 22px; position: relative"><span style="position: absolute; left: 0; color: #8A6A35">—</span>A fully customized workout plan</li>
+<li style="padding-left: 22px; position: relative"><span style="position: absolute; left: 0; color: #8A6A35">—</span>Strength, cardio or daily movement goals (or a mix)</li>
+<li style="padding-left: 22px; position: relative"><span style="position: absolute; left: 0; color: #8A6A35">—</span>Clear instructions and video demos for every exercise</li>
+<li style="padding-left: 22px; position: relative"><span style="position: absolute; left: 0; color: #8A6A35">—</span>Form feedback as you progress</li>
+</ul>
+</div>
+<div style="background: #EEEAE2; padding: 48px 0 48px 48px; display: flex; flex-direction: column; gap: 20px">
+<img class="bw" src="./assets/e5f6a3aa470b6b44a9e454a9c0b36322.jpg" alt="Brent Henderson with a meal of salmon, salad and apples" style="display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: 50% 30%">
+<div style="font-family: 'Instrument Serif', serif; font-size: 22px; color: #8A6A35">02 — Nutrition</div>
+<h3 style="margin: 0; font-size: 30px; font-weight: 700; line-height: 1.2">No fads. No restriction. Food that fits your life.</h3>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 17px; color: #3D3B36">
+<li style="padding-left: 22px; position: relative"><span style="position: absolute; left: 0; color: #8A6A35">—</span>Simple, realistic diet tweaks — or a full meal plan if you want one</li>
+<li style="padding-left: 22px; position: relative"><span style="position: absolute; left: 0; color: #8A6A35">—</span>Eating strategies for fat loss or muscle gain</li>
+<li style="padding-left: 22px; position: relative"><span style="position: absolute; left: 0; color: #8A6A35">—</span>Support with emotional or binge eating</li>
+<li style="padding-left: 22px; position: relative"><span style="position: absolute; left: 0; color: #8A6A35">—</span>Supplement and vitamin guidance</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="how" style="max-width: 1280px; margin: 0 auto; padding: 140px 40px 100px">
+<div style="font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: {{accent}}; margin-bottom: 20px">How coaching works</div>
+<h2 style="margin: 0 0 72px; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(40px, 4.4vw, 64px); line-height: 1.05; max-width: 820px">Three steps. One coach who stays with you the whole way.</h2>
+<ol class="stack" style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 48px">
+<li style="border-top: 1px solid #4A4842; padding-top: 28px; display: flex; flex-direction: column; gap: 14px">
+<span style="font-family: 'Instrument Serif', serif; font-size: 72px; line-height: 1; color: {{accent}}">01</span>
+<h3 style="margin: 0; font-size: 24px; font-weight: 700">Free consultation</h3>
+<p style="margin: 0; color: #C9C4BA">We talk through what's holding you back, set realistic goals for your lifestyle and map out a simple plan forward.</p>
+</li>
+<li style="border-top: 1px solid #4A4842; padding-top: 28px; display: flex; flex-direction: column; gap: 14px">
+<span style="font-family: 'Instrument Serif', serif; font-size: 72px; line-height: 1; color: {{accent}}">02</span>
+<h3 style="margin: 0; font-size: 24px; font-weight: 700">Your custom plan</h3>
+<p style="margin: 0; color: #C9C4BA">Training and nutrition built for your goals, schedule and equipment — delivered in the coaching app, with workout and habit tracking.</p>
+</li>
+<li style="border-top: 1px solid #4A4842; padding-top: 28px; display: flex; flex-direction: column; gap: 14px">
+<span style="font-family: 'Instrument Serif', serif; font-size: 72px; line-height: 1; color: {{accent}}">03</span>
+<h3 style="margin: 0; font-size: 24px; font-weight: 700">Check in. Adjust. Repeat.</h3>
+<p style="margin: 0; color: #C9C4BA">A weekly 1-on-1 call to review what went well and what to change — plus unlimited text support between calls.</p>
+</li>
+</ol>
+</section>
+
+<section style="max-width: 1280px; margin: 0 auto; padding: 0 40px 140px">
+<div style="background: #171716; border: 1px solid #2A2926; padding: 48px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 24px; flex-wrap: wrap; margin-bottom: 36px">
+<h3 style="margin: 0; font-size: 26px; font-weight: 700">What it actually takes each week</h3>
+<span style="font-family: 'Instrument Serif', serif; font-style: italic; font-size: 22px; color: {{accent}}">No living in the gym.</span>
+</div>
+<div class="stack" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px">
+<div><div style="font-weight: 800; font-stretch: 70%; font-size: 56px; line-height: 1">30–45<span style="font-size: 24px"> min</span></div><div style="color: #A39E94; margin-top: 10px; font-size: 15px">Strength sessions, 2–6× per week</div></div>
+<div><div style="font-weight: 800; font-stretch: 70%; font-size: 56px; line-height: 1">~5<span style="font-size: 24px"> min</span></div><div style="color: #A39E94; margin-top: 10px; font-size: 15px">Food tracking per day</div></div>
+<div><div style="font-weight: 800; font-stretch: 70%; font-size: 56px; line-height: 1">10+<span style="font-size: 24px"> min</span></div><div style="color: #A39E94; margin-top: 10px; font-size: 15px">Daily cardio or movement</div></div>
+<div><div style="font-weight: 800; font-stretch: 70%; font-size: 56px; line-height: 1">15–30<span style="font-size: 24px"> min</span></div><div style="color: #A39E94; margin-top: 10px; font-size: 15px">Weekly check-in call with Brent</div></div>
+</div>
+</div>
+</section>
+
+<section style="border-top: 1px solid #2A2926">
+<div class="stack" style="max-width: 1280px; margin: 0 auto; padding: 120px 40px; display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 64px">
+<div style="display: flex; flex-direction: column; gap: 24px">
+<h2 style="margin: 0; font-weight: 800; font-stretch: 70%; text-transform: uppercase; font-size: 52px; line-height: 0.95">Everything included</h2>
+<p style="margin: 0; color: #C9C4BA">One coach, one plan, one place to track it all.</p>
+<a href="https://calendly.com/hendersonfitnesscoaching/consult" style="text-decoration: none; color: {{accent}}; font-weight: 600">Book your free consultation →</a>
+<img class="bw" src="./assets/27a93bb7c94582265c1ca7299b6c6c28.jpg" alt="Brent Henderson on a leg extension machine" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 35%; margin-top: 16px; border: 1px solid #2A2926">
+</div>
+<ul class="stack" style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 48px">
+<li style="padding: 22px 0; border-bottom: 1px solid #2A2926; display: flex; justify-content: space-between; gap: 16px"><span style="font-size: 19px">Custom workout plan</span><span style="color: #A39E94; font-size: 14px">Home or gym</span></li>
+<li style="padding: 22px 0; border-bottom: 1px solid #2A2926; display: flex; justify-content: space-between; gap: 16px"><span style="font-size: 19px">Personalized nutrition coaching</span><span style="color: #A39E94; font-size: 14px">Tracked in MyFitnessPal</span></li>
+<li style="padding: 22px 0; border-bottom: 1px solid #2A2926; display: flex; justify-content: space-between; gap: 16px"><span style="font-size: 19px">Weekly 1-on-1 check-in calls</span><span style="color: #A39E94; font-size: 14px">15–30 min</span></li>
+<li style="padding: 22px 0; border-bottom: 1px solid #2A2926; display: flex; justify-content: space-between; gap: 16px"><span style="font-size: 19px">Unlimited text support</span><span style="color: #A39E94; font-size: 14px">Direct to Brent</span></li>
+<li style="padding: 22px 0; border-bottom: 1px solid #2A2926; display: flex; justify-content: space-between; gap: 16px"><span style="font-size: 19px">Video exercise demos</span><span style="color: #A39E94; font-size: 14px">Every movement</span></li>
+<li style="padding: 22px 0; border-bottom: 1px solid #2A2926; display: flex; justify-content: space-between; gap: 16px"><span style="font-size: 19px">Form feedback</span><span style="color: #A39E94; font-size: 14px">As you progress</span></li>
+<li style="padding: 22px 0; border-bottom: 1px solid #2A2926; display: flex; justify-content: space-between; gap: 16px"><span style="font-size: 19px">Workout &amp; habit tracking</span><span style="color: #A39E94; font-size: 14px">Sleep, steps, water</span></li>
+<li style="padding: 22px 0; border-bottom: 1px solid #2A2926; display: flex; justify-content: space-between; gap: 16px"><span style="font-size: 19px">Full coaching app access</span><span style="color: #A39E94; font-size: 14px">Train anywhere</span></li>
+</ul>
+</div>
+</section>
+
+<section id="results" style="background: #171716; border-top: 1px solid #2A2926; border-bottom: 1px solid #2A2926">
+<div style="max-width: 1280px; margin: 0 auto; padding: 140px 40px">
+<div style="font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: {{accent}}; margin-bottom: 40px">Client words, unedited</div>
+<div class="stack" style="display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 64px; align-items: center; margin: 0 0 96px">
+<figure style="margin: 0">
+<blockquote style="margin: 0; font-family: 'Instrument Serif', serif; font-size: clamp(30px, 3vw, 46px); line-height: 1.15">“Brent has been, and continues to be a huge help for me in staying on track with my fitness journey &amp; goals. I highly recommend working with Brent whether you're starting from scratch or already have a fitness regime in place.”</blockquote>
+<figcaption style="margin-top: 28px; display: flex; align-items: center; gap: 16px; font-size: 15px"><span style="color: {{accent}}; letter-spacing: 2px">★★★★★</span><strong>Kirsten Anderson</strong><span style="color: #A39E94">Google review</span></figcaption>
+</figure>
+<img class="bw" src="./assets/0150a63ed05677bd6c2ebe048ad16929.jpg" alt="Brent Henderson and friends lifting a training partner overhead in the gym" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border: 1px solid #2A2926">
+</div>
+<div class="stack" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px">
+<figure style="margin: 0; padding: 32px; border: 1px solid #2A2926; background: #0E0E0D; display: flex; flex-direction: column; justify-content: space-between; gap: 24px"><blockquote style="margin: 0; font-size: 18px; color: #D6D1C7">“Brent creatively works around my chronic and acute injuries…”</blockquote><figcaption style="font-size: 14px"><strong>Adrien Helander</strong> <span style="color: #A39E94">· ★★★★★</span></figcaption></figure>
+<figure style="margin: 0; padding: 32px; border: 1px solid #2A2926; background: #0E0E0D; display: flex; flex-direction: column; justify-content: space-between; gap: 24px"><blockquote style="margin: 0; font-size: 18px; color: #D6D1C7">“Brent brings a great energy to fitness coaching, and is passionate about offering a tailored approach…”</blockquote><figcaption style="font-size: 14px"><strong>Christian Collett</strong> <span style="color: #A39E94">· ★★★★★</span></figcaption></figure>
+<figure style="margin: 0; padding: 32px; border: 1px solid #2A2926; background: #0E0E0D; display: flex; flex-direction: column; justify-content: space-between; gap: 24px"><blockquote style="margin: 0; font-size: 18px; color: #D6D1C7">“Brent is attentive, adaptive, and encouraging! Highly recommend!”</blockquote><figcaption style="font-size: 14px"><strong>Elizabeth Halper</strong> <span style="color: #A39E94">· ★★★★★</span></figcaption></figure>
+</div>
+</div>
+</section>
+
+<section id="pricing" style="max-width: 1280px; margin: 0 auto; padding: 140px 40px">
+<div class="stack" style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 64px; align-items: end; margin-bottom: 64px">
+<h2 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(40px, 4.4vw, 64px); line-height: 1.05">Complete Coaching. One plan, three ways to commit.</h2>
+<p style="margin: 0; color: #C9C4BA; font-size: 18px">Every option includes custom training, nutrition coaching, weekly calls, unlimited messaging, form feedback and habit tracking. Every plan starts with a free consultation.</p>
+</div>
+<div class="stack" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px">
+<div style="border: 1px solid #2A2926; padding: 40px; display: flex; flex-direction: column; gap: 18px">
+<div style="font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #A39E94">Monthly</div>
+<div style="font-weight: 800; font-stretch: 70%; font-size: 72px; line-height: 1">$299<span style="font-size: 20px; font-weight: 500; color: #A39E94"> / 4 weeks</span></div>
+<p style="margin: 0; color: #C9C4BA; font-size: 16px">Recurring every 4 weeks. Cancel anytime.</p>
+<a href="https://calendly.com/hendersonfitnesscoaching/consult" style="margin-top: auto; text-decoration: none; text-align: center; border: 1px solid #4A4842; color: #EEEAE2; padding: 16px; font-weight: 600">Start with a free consult</a>
+</div>
+<div style="border: 1px solid #2A2926; padding: 40px; display: flex; flex-direction: column; gap: 18px">
+<div style="font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #A39E94">6 months</div>
+<div style="font-weight: 800; font-stretch: 70%; font-size: 72px; line-height: 1">$250<span style="font-size: 20px; font-weight: 500; color: #A39E94"> / month</span></div>
+<p style="margin: 0; color: #C9C4BA; font-size: 16px">$1,500 total.</p>
+<a href="https://calendly.com/hendersonfitnesscoaching/consult" style="margin-top: auto; text-decoration: none; text-align: center; border: 1px solid #4A4842; color: #EEEAE2; padding: 16px; font-weight: 600">Start with a free consult</a>
+</div>
+<div style="border: 1px solid {{accent}}; padding: 40px; display: flex; flex-direction: column; gap: 18px; background: #171716">
+<div style="display: flex; justify-content: space-between; gap: 12px"><span style="font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #A39E94">12 months</span><span style="font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: {{accent}}">Lowest monthly rate</span></div>
+<div style="font-weight: 800; font-stretch: 70%; font-size: 72px; line-height: 1">$199<span style="font-size: 20px; font-weight: 500; color: #A39E94"> / month</span></div>
+<p style="margin: 0; color: #C9C4BA; font-size: 16px">$2,388 total.</p>
+<a href="https://calendly.com/hendersonfitnesscoaching/consult" style="margin-top: auto; text-decoration: none; text-align: center; background: {{accent}}; color: #0E0E0D; padding: 16px; font-weight: 700">Start with a free consult</a>
+</div>
+</div>
+<div style="margin-top: 24px; border: 1px solid #2A2926; padding: 28px 40px; display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap">
+<p style="margin: 0; color: #D6D1C7"><strong style="color: #EEEAE2">Elite Coaching</strong> — everything above, plus daily accountability texts, weekly progress reports and a bonus call each month.</p>
+<a href="https://calendly.com/hendersonfitnesscoaching/consult" style="text-decoration: none; color: {{accent}}; font-weight: 600; white-space: nowrap">Ask Brent on your call →</a>
+</div>
+</section>
+
+<section style="max-width: 1280px; margin: 0 auto; padding: 0 40px 140px">
+<div class="stack" style="display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 64px; align-items: center; background: #EEEAE2; color: #141413; padding: 56px">
+<div style="aspect-ratio: 3 / 4; background: #141413; color: #EEEAE2; padding: 32px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 18px 18px 0 #C9A46B">
+<span style="font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A46B">Free guide</span>
+<div style="font-weight: 800; font-stretch: 70%; text-transform: uppercase; font-size: 46px; line-height: 0.92">The Real-Life <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; text-transform: none; font-stretch: 100%; color: #C9A46B">Fat Loss</span> Guide</div>
+<span style="font-size: 13px; color: #A39E94">Brent Henderson</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 22px">
+<h2 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 48px; line-height: 1.05">Not ready for a call? Start with the guide.</h2>
+<p style="margin: 0; font-size: 18px; color: #3D3B36">Brent's no-fads, no-restriction approach to losing fat around a busy schedule. [GUIDE CONTENTS — to be written with Brent]</p>
+<form style="display: flex; gap: 0; flex-wrap: wrap; align-items: flex-end">
+<label style="display: flex; flex-direction: column; gap: 8px; flex-grow: 1; font-size: 13px; font-weight: 600; letter-spacing: 0.04em">Email address<input type="email" placeholder="you@example.com" style="font: inherit; font-size: 17px; font-weight: 400; padding: 18px 20px; border: 1px solid #141413; background: #FFFFFF; min-width: 240px"></label>
+<button type="button" style="font: inherit; font-weight: 700; font-size: 16px; padding: 19px 28px; background: #141413; color: #EEEAE2; border: 1px solid #141413; cursor: pointer">Send me the guide</button>
+</form>
+<p style="margin: 0; font-size: 13px; color: #5C5850">Followed by an invitation to book your free consultation.</p>
+</div>
+</div>
+</section>
+
+<section style="border-top: 1px solid #2A2926">
+<div style="max-width: 1280px; margin: 0 auto; padding: 160px 40px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 32px">
+<div style="font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: {{accent}}">Your plan starts with one conversation</div>
+<h2 style="margin: 0; font-weight: 800; font-stretch: 70%; text-transform: uppercase; font-size: clamp(64px, 9vw, 150px); line-height: 0.88">Stop guessing.<br><span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; text-transform: none; font-stretch: 100%; color: {{accent}}">Start coaching.</span></h2>
+<p style="margin: 0; font-size: 20px; color: #C9C4BA; max-width: 620px">Book a free 1-on-1 call with Brent. Leave with realistic goals and a simple plan forward — whether you coach with him or not.</p>
+<a href="https://calendly.com/hendersonfitnesscoaching/consult" style="text-decoration: none; background: {{accent}}; color: #0E0E0D; padding: 22px 40px; font-weight: 700; font-size: 18px">Book Your Free Consultation</a>
+<p style="margin: 0; font-size: 15px; color: #A39E94">Prefer to talk? Call <a href="tel:+14252188855" style="color: #EEEAE2">(425) 218-8855</a></p>
+</div>
+</section>
+
+<footer style="border-top: 1px solid #2A2926">
+<div style="max-width: 1280px; margin: 0 auto; padding: 40px; display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; font-size: 14px; color: #A39E94">
+<span><strong style="color: #EEEAE2; font-stretch: 72%; letter-spacing: 0.06em">HENDERSON</strong> fitness coaching · Online nationwide · In person in Seattle, WA</span>
+<span>© Henderson Fitness Coaching</span>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#C9A46B","options":["#C9A46B","#B9B2A4","#D08A5A"]},"$preview":{"width":1440,"height":7000}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#C9A46B' };
+}
+}
+</script>
+</body>
+</html>
